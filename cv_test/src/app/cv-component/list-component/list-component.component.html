@@ -1,0 +1,6 @@
+<ol class="list-group list-group-numbered">
+@for (item of cvList; track item) {
+    <app-item-component [cv]="item" (click)="selectCv(item)"></app-item-component>
+}
+</ol>
+

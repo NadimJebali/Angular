@@ -1,0 +1,13 @@
+<div class="container p-4">
+    <div class="row">
+    <!-- List Component -->
+    <div class="col-3">
+        <app-list-component (changedSelectedCv)="changeSelectedCv($event)"></app-list-component>
+    </div>
+
+    <!-- Details Component -->
+    <div class="col-9">
+        <app-detail-component [cv]="selectedCv"></app-detail-component>
+    </div>
+    </div>
+</div>
