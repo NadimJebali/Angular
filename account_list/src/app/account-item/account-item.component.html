@@ -1,0 +1,8 @@
+<li>
+    <h4>{{oneAccount.name}}</h4>
+    <hr>
+    <div>{{oneAccount.type}}</div>
+    <button type="button" (click)="setType('Active')" [disabled]="oneAccount.type=='Active'" class="btn btn-success">set to active</button>
+    <button type="button" (click)="setType('Inactive')" [disabled]="oneAccount.type=='Inactive'" class="btn btn-danger">set to inactive</button>
+    <button type="button" (click)="setType('Hidden')" [disabled]="oneAccount.type=='Hidden'" class="btn btn-info">set to Hidden</button>
+</li>

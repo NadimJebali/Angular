@@ -1,0 +1,13 @@
+<div class="form-control">
+    <label>Account Name</label>
+<br>
+<input #AccountName type="text" class="form-control">
+<br>
+<select #AccountType class="form-select form-select-lg mb-">
+    <option selected>Choose status</option>
+    <option value="Active">Active</option>
+    <option value="Inactive">Inactive</option>
+    <option value="Hidden">Hidden</option>
+</select>
+<button type="button" class="btn btn-primary" (click)="getinfo(AccountName.value,AccountType.value)">Add account</button>
+</div>
