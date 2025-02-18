@@ -1,5 +1,6 @@
 <ol class="list-group list-group-numbered">
-@for (item of cvList; track item) {
+    <input #strValue type="text" (change)="searchterm = strValue.value">
+@for (item of cvList | filter:searchterm; track item) {
     <app-item-component [cv]="item" (click)="selectCv(item)"></app-item-component>
 }
 </ol>

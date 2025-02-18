@@ -1,6 +1,6 @@
-<li class="list-group-item d-flex justify-content-between align-items-start" role="button">
+<li appCustomDir class="list-group-item d-flex justify-content-between align-items-start" role="button">
     <div class="ms-2 me-auto">
-      <div class="fw-bold"><span class="badge text-bg-primary rounded-pill">{{cv.id}}</span>  {{cv.nom}} {{cv.prenom}}</div>
+      <div class="fw-bold"><span class="badge text-bg-primary rounded-pill">{{cv.id}}</span>  {{cv.nom}} {{cv.prenom | short}}</div>
       {{cv.profession}}
     </div>
     
