@@ -1,0 +1,9 @@
+<div [ngStyle]="{'color':tC, 'background': bgC, 'fontSize':tS+'px', 'font-family': tF}">Angular dwmm</div><br>
+<input [(ngModel)]="bgC" type="text" placeholder="choose background Color"><br>
+<input [(ngModel)]="tC" type="text" placeholder="choose text Color"><br>
+<input [(ngModel)]="tS" type="number" placeholder="0"><br>
+<select [(ngModel)]="tF">
+  <option value="'Roboto'">Roboto</option>
+  <option value="'Orbitron'">Orbitron</option>
+  <option value="'Press Start 2P'">Press Start 2P</option>
+</select>
